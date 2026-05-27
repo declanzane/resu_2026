@@ -174,6 +174,25 @@
       width: 100%;
     }
 
+    .hero-avatar {
+      display: block;
+      margin: 0 auto 1.5rem;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid transparent;
+      background: linear-gradient(var(--color-bg), var(--color-bg)) padding-box,
+                  linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end)) border-box;
+      box-shadow: 0 0 30px rgba(26,86,219,0.3);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .hero-avatar:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(26,86,219,0.5);
+    }
+
     .hero-badge {
       display: inline-flex;
       align-items: center;
@@ -825,6 +844,11 @@
         font-size: 2rem;
       }
 
+      .hero-avatar {
+        width: 100px;
+        height: 100px;
+      }
+
       .hero-stats {
         gap: 1.5rem;
       }
@@ -870,6 +894,7 @@
     <!-- Hero -->
     <section class="hero" id="about">
       <div class="hero-content">
+        <img src="photo.jpg" alt="郑超" class="hero-avatar">
         <div class="hero-badge">
           <span class="dot"></span>
           <span>Open to Opportunities</span>
