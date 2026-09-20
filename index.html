@@ -374,6 +374,25 @@
       font-weight: 600;
     }
 
+    .scholar-link {
+      display: inline-block;
+      margin-top: 0.8rem;
+      padding: 0.5rem 1.1rem;
+      background: rgba(26,86,219,0.12);
+      border: 1px solid rgba(26,86,219,0.35);
+      border-radius: 100px;
+      color: var(--color-primary-light);
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all var(--transition);
+    }
+
+    .scholar-link:hover {
+      background: rgba(26,86,219,0.22);
+      color: var(--color-accent-light);
+      border-color: var(--color-accent);
+    }
+
     /* ===== Education ===== */
     .edu-grid {
       display: grid;
@@ -914,16 +933,16 @@
         </div>
         <div class="hero-stats">
           <div class="hero-stat">
-            <div class="number">16</div>
-            <div class="label">顶会论文</div>
-          </div>
-          <div class="hero-stat">
-            <div class="number">1500+</div>
+            <div class="number">1870+</div>
             <div class="label">总引用</div>
           </div>
           <div class="hero-stat">
-            <div class="number">3</div>
-            <div class="label">Oral论文</div>
+            <div class="number">13</div>
+            <div class="label">h-index</div>
+          </div>
+          <div class="hero-stat">
+            <div class="number">20</div>
+            <div class="label">i10-index</div>
           </div>
           <div class="hero-stat">
             <div class="number">13</div>
@@ -945,7 +964,8 @@
         <div class="section-divider"></div>
       </div>
       <p class="about-text">
-        清华大学工学博士，现任地图自动化算法组长及架构师，管理18人团队。深耕自动驾驶与高精地图领域13年，主导THMA系列算法三代演进。在CVPR/ECCV/ICCV/AAAI等顶会发表论文<strong>16篇</strong>，总引用约<strong>1500次</strong>，含多篇Oral论文。
+        清华大学工学博士，现任地图自动化算法组长及架构师，管理18人团队。深耕自动驾驶与高精地图领域13年，主导THMA系列算法三代演进。在CVPR/ECCV/ICCV/AAAI等顶会发表论文多篇，总引用<strong>1870余次</strong>，h-index <strong>13</strong>，i10-index <strong>20</strong>，含多篇Oral论文。
+        <br><a href="https://scholar.google.com/citations?user=6A1yEFMAAAAJ&hl=en" target="_blank" rel="noopener" class="scholar-link">🎓 Google Scholar 主页 →</a>
       </p>
     </section>
 
@@ -1040,16 +1060,16 @@
 
       <div class="pub-stats">
         <div class="pub-stat">
-          <div class="num">16</div>
-          <div class="desc">顶会论文</div>
-        </div>
-        <div class="pub-stat">
-          <div class="num">~1500</div>
+          <div class="num">1870+</div>
           <div class="desc">总引用</div>
         </div>
         <div class="pub-stat">
-          <div class="num">3</div>
-          <div class="desc">Oral</div>
+          <div class="num">13</div>
+          <div class="desc">h-index</div>
+        </div>
+        <div class="pub-stat">
+          <div class="num">20</div>
+          <div class="desc">i10-index</div>
         </div>
       </div>
 
@@ -1058,20 +1078,11 @@
       <div class="pub-list">
         <div class="pub-card">
           <div>
-            <div class="pub-title">Topo2Seq: Enhanced Topology Reasoning via Topology Sequence Learning</div>
+            <div class="pub-title">A Survey on Multimodal Large Language Models for Autonomous Driving</div>
             <div class="pub-meta">
-              <span class="pub-venue">AAAI 2025</span>
-              <span class="pub-highlight">Oral</span>
-            </div>
-          </div>
-        </div>
-        <div class="pub-card">
-          <div>
-            <div class="pub-title">Latr: 3D Lane Detection from Monocular Images with Transformer</div>
-            <div class="pub-meta">
-              <span class="pub-venue">ICCV 2023</span>
-              <span class="pub-highlight">Oral</span>
-              <span class="pub-citations">引用 77</span>
+              <span class="pub-venue">WACV 2024</span>
+              <span class="pub-highlight">综述</span>
+              <span class="pub-citations">引用 822</span>
             </div>
           </div>
         </div>
@@ -1081,17 +1092,7 @@
             <div class="pub-meta">
               <span class="pub-venue">ECCV 2022</span>
               <span class="pub-highlight">Oral</span>
-              <span class="pub-citations">引用 375</span>
-            </div>
-          </div>
-        </div>
-        <div class="pub-card">
-          <div>
-            <div class="pub-title">A Survey on Multimodal Large Language Models for Autonomous Driving</div>
-            <div class="pub-meta">
-              <span class="pub-venue">WACV 2024</span>
-              <span class="pub-highlight">综述</span>
-              <span class="pub-citations">引用 592</span>
+              <span class="pub-citations">引用 489</span>
             </div>
           </div>
         </div>
@@ -1101,7 +1102,27 @@
             <div class="pub-meta">
               <span class="pub-venue">CVPR 2024</span>
               <span class="pub-highlight">Benchmark</span>
-              <span class="pub-citations">引用 65</span>
+              <span class="pub-citations">引用 111</span>
+            </div>
+          </div>
+        </div>
+        <div class="pub-card">
+          <div>
+            <div class="pub-title">Latr: 3D Lane Detection from Monocular Images with Transformer</div>
+            <div class="pub-meta">
+              <span class="pub-venue">ICCV 2023</span>
+              <span class="pub-highlight">Oral</span>
+              <span class="pub-citations">引用 103</span>
+            </div>
+          </div>
+        </div>
+        <div class="pub-card">
+          <div>
+            <div class="pub-title">Topo2Seq: Enhanced Topology Reasoning via Topology Sequence Learning</div>
+            <div class="pub-meta">
+              <span class="pub-venue">AAAI 2025</span>
+              <span class="pub-highlight">Oral</span>
+              <span class="pub-citations">引用 14</span>
             </div>
           </div>
         </div>
