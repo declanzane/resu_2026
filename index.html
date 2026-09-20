@@ -393,6 +393,45 @@
       border-color: var(--color-accent);
     }
 
+    .about-highlights {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin-top: 1.8rem;
+      max-width: 760px;
+    }
+
+    .highlight-item {
+      padding: 1.1rem 0.8rem;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-sm);
+      text-align: center;
+      transition: all var(--transition);
+    }
+
+    .highlight-item:hover {
+      border-color: var(--color-primary-light);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(26,86,219,0.15);
+    }
+
+    .highlight-num {
+      font-size: 1.5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-end));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      line-height: 1.2;
+    }
+
+    .highlight-label {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+      margin-top: 0.3rem;
+    }
+
     /* ===== Education ===== */
     .edu-grid {
       display: grid;
@@ -872,6 +911,10 @@
         gap: 1.5rem;
       }
 
+      .about-highlights {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
       .thma-grid {
         grid-template-columns: 1fr;
       }
@@ -964,9 +1007,28 @@
         <div class="section-divider"></div>
       </div>
       <p class="about-text">
-        清华大学工学博士，现任地图自动化算法组长及架构师，管理18人团队。深耕自动驾驶与高精地图领域13年，主导THMA系列算法三代演进。在CVPR/ECCV/ICCV/AAAI等顶会发表论文多篇，总引用<strong>1870余次</strong>，h-index <strong>13</strong>，i10-index <strong>20</strong>，含多篇Oral论文。
+        清华大学工学博士，13年自动驾驶与高精地图深耕经验。现任地图自动化算法组长及架构师，统筹18人团队，深谙感知算法、多模态大模型（VLM）及推理引擎（GraphRAG / COT）的前沿应用。主导 THMA 系列地图感知架构三代演进，以技术创新驱动生产力变革，实现<strong>自动化率突破90%、产线效率提升6-20倍、累计降本数亿元</strong>。学术成果丰硕，在 CVPR / ICCV / ECCV / AAAI 等顶会发表论文16篇（含多篇Oral），总引用<strong>1870余次</strong>，h-index <strong>13</strong>，曾获 AAAI 2023 创新应用奖，并担任国际会议研讨会主席及高校行业导师。
         <br><a href="https://scholar.google.com/citations?user=6A1yEFMAAAAJ&hl=en" target="_blank" rel="noopener" class="scholar-link">🎓 Google Scholar 主页 →</a>
       </p>
+
+      <div class="about-highlights">
+        <div class="highlight-item">
+          <div class="highlight-num">90%+</div>
+          <div class="highlight-label">地图自动化率</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num">6-20×</div>
+          <div class="highlight-label">产线效率提升</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num">数亿元</div>
+          <div class="highlight-label">累计降本</div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num">18人</div>
+          <div class="highlight-label">算法团队</div>
+        </div>
+      </div>
     </section>
 
     <!-- Education -->
